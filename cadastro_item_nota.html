@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Item da Nota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Item da Nota</h1>
+        <p class="subtitle">Vincule produtos a uma nota fiscal</p>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="id_nota_item">Número da Nota</label>
+                <input type="text" id="id_nota_item" name="id_nota_item" required>
+            </div>
+
+            <div class="form-group">
+                <label for="id_produto_item">Código do Produto</label>
+                <input type="text" id="id_produto_item" name="id_produto_item" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantidade_item">Quantidade</label>
+                <input type="number" id="quantidade_item" name="quantidade_item" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="valor_unitario_item">Valor Unitário (R$)</label>
+                <input type="number" step="0.01" id="valor_unitario_item" name="valor_unitario_item" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subtotal_item">Subtotal (R$)</label>
+                <input type="number" step="0.01" id="subtotal_item" name="subtotal_item" required>
+            </div>
+
+            <button type="submit" class="btn">Adicionar Item</button>
+            <a href="cadastro_nota.html" class="btn btn-secondary">Voltar para Nota</a>
+            <a href="home.html" class="btn btn-secondary">Voltar para Home</a>
+        </form>
+    </div>
+</body>
+</html>
